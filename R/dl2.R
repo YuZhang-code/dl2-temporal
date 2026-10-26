@@ -54,6 +54,8 @@
 #'   composite indicator, weighted components, reference profile, and
 #'   diagnostics, iteration history, and weights at each iteration. The score
 #'   has the direction of distance from `reference`.
+#' @importFrom stats setNames
+#' @importFrom utils tail
 #' @export
 dl2 <- function(x, polarity = NULL, err = 1e-4, iterations = 20L,
                 degrees = 2, nfold = NULL, trace = NULL,
@@ -162,7 +164,7 @@ dl2 <- function(x, polarity = NULL, err = 1e-4, iterations = 20L,
           }
         }
         if (!is.finite(sum(q)) || sum(q) <= 0) {
-          stop("Iterative Peña–Trapero factors sum to zero; remove constant indicators or inspect the input.", call. = FALSE)
+          stop("Iterative Pena-Trapero factors sum to zero; remove constant indicators or inspect the input.", call. = FALSE)
         }
 
         new_score <- as.numeric(calculateDP2(

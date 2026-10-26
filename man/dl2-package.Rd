@@ -45,7 +45,7 @@ dl2(x, polarity = NULL, err = 1e-04, iterations = 20L, degrees = 2,
 \item{x, Z}{Numeric matrix or data frame. Rows are observations and columns are indicators. For a panel, supply all periods together.}
 \item{polarity}{Indicators whose higher raw values correspond to more of the target construct, specified by column indices or names. Unlisted indicators are negative-polarity: higher raw values correspond to less of the target construct. NULL treats all as negative. For a vulnerability index, unemployment is positive when higher unemployment means greater vulnerability; a protective indicator such as employment is negative.}
 \item{custom_min, custom_max}{Optional fixed normalization bounds. Supply both to reuse bounds from a reference sample.}
-\item{method}{Method used by code{weightFactors}: permutation-averaged Pena-Trapero, equal, or subjective.}
+\item{method}{Method used by \code{weightFactors}: permutation-averaged Pena-Trapero, equal, or subjective.}
 \item{weight_method}{The automatically estimated DL2 index uses the iterative sequential Pena-Trapero method. Use \code{iterations = 1} for one update. Permutation-averaged, equal, and subjective factors are available separately through \code{weightFactors()}.}
 \item{subjective_weights}{Retained for call compatibility; use \code{weightFactors()} for standalone subjective factor estimation.}
 \item{n_permutations}{Retained for call compatibility; use \code{weightFactors()} for standalone permutation-based factor estimation.}

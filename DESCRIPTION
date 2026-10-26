@@ -12,6 +12,9 @@ RoxygenNote: 7.3.2
 URL: https://github.com/E-Jimenez-Fernandez/dl2
 BugReports: https://github.com/E-Jimenez-Fernandez/dl2/issues
 References: Jiménez-Fernández, E., Sánchez, A., & Ortega-Pérez, M. (2022). Dealing with weighting scheme in composite indicators: An unsupervised distance-machine learning proposal for quantitative data. Socio-Economic Planning Sciences, 83, 101339. https://doi.org/10.1016/j.seps.2022.101339
+Imports:
+    stats,
+    utils
 Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

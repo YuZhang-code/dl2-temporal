@@ -1,4 +1,4 @@
-# dl2 0.3.0
+# dl2 0.3.2
 
 An R implementation of a DL2 composite indicator based on weighted Minkowski
 distances, optional whole-sample normalization, and iterative sequential
