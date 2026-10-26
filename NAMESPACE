@@ -1,0 +1,8 @@
+export(calculateDP2)
+export(calculateDistance)
+export(calculoFactoresPonderacion)
+export(dl2)
+export(indexFrechet)
+export(normalization)
+export(sensitivityDL2)
+export(weightFactors)
